@@ -24,13 +24,13 @@ public class Problem2 {
         l2.next.next = new ListNode(2);
 
         ListNode listNode = addTwoNumbers(l1, l2);
-        Assert.assertEquals(listNode.val, 3);
-        Assert.assertEquals(listNode.next.val, 2);
-        Assert.assertEquals(listNode.next.next.val, 2);
-        Assert.assertEquals(listNode.next.next.next.val, 1);
+        Assert.assertEquals(3, listNode.val);
+        Assert.assertEquals(2, listNode.next.val);
+        Assert.assertEquals(2, listNode.next.next.val);
+        Assert.assertEquals(1, listNode.next.next.next.val);
     }
 
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    private ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         // 2 -> 7 -> 3
         // 1 -> 5 -> 2
         // 372+251=623

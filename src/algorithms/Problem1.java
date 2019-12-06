@@ -13,7 +13,7 @@ public class Problem1 {
     public void testTwoSum() {
         int[] nums = {2, 5, 5, 11};
         int target = 10;
-        Assert.assertArrayEquals(twoSum(nums, target), new int[]{1, 2});
+        Assert.assertArrayEquals(new int[]{1, 2}, twoSum(nums, target));
     }
 
     private static int[] twoSum(int[] nums, int target) {

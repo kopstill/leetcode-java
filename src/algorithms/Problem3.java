@@ -15,7 +15,7 @@ public class Problem3 {
     @Test
     public void testLengthOfLongestSubstring() {
         String str = "helloworld";
-        Assert.assertEquals(lengthOfLongestSubstring(str), 5);
+        Assert.assertEquals(5, lengthOfLongestSubstring(str));
     }
 
     private int lengthOfLongestSubstring(String str) {
