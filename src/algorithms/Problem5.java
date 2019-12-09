@@ -25,7 +25,7 @@ public class Problem5 {
         for (int i = 0; i < length; i++) {
             for (int j = i + 1; j <= length; j++) {
                 String temp = s.substring(i, j);
-                if (isPalindrome(temp) && temp.length() > max) {
+                if (temp.length() > max && isPalindrome(temp)) {
                     result = temp;
                     max = Math.max(max, result.length());
                 }
